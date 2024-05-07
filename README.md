@@ -13,7 +13,7 @@ Tampilan page ketika ada beberapa pengguna yang bertukar pesan satu sama lain. P
 
 ### 3.2 Add some creativities to the webclient
 
-Setelah saya ubah tampilannya bertemakan warna cyan, menjadi seperti berikut:
+Saya mengubah tema warna aplikasi menjadi cyan, mengubah avatar pengguna, mengubah warna pada beberapa text (nama user, pesan yang dikirimkan), mengubah beberapa text menjadi bold ("User", "Chat", dan username). Berikut ini tampilan aplikasi setelah saya modifikasi:
 
 Tampilan page ketika pengguna pertama kali membuka aplikasi dan mengisi username untuk bisa lanjut chat. Pada contoh ini username penggunanya adalah "ravieravie": <br>
 ![alt text](image-3.png)
