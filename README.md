@@ -1,5 +1,7 @@
 # Reflection Notes
 
+### 3.1. Original code
+
 Tampilan page ketika pengguna pertama kali membuka aplikasi dan mengisi username untuk bisa lanjut chat. Pada contoh ini username penggunanya adalah "ravieravie": <br>
 ![alt text](image-1.png)
 
@@ -8,6 +10,19 @@ Tampilan page ketika pengguna sukses masuk dan mulai mengirimkan pesan. Pada con
 
 Tampilan page ketika ada beberapa pengguna yang bertukar pesan satu sama lain. Pada contoh ini adalah pengguna dengan username "ravieravie" dan "abudabud": <br>
 ![alt text](image.png)
+
+### 3.2 Add some creativities to the webclient
+
+Setelah saya ubah tampilannya bertemakan warna cyan, menjadi seperti berikut:
+
+Tampilan page ketika pengguna pertama kali membuka aplikasi dan mengisi username untuk bisa lanjut chat. Pada contoh ini username penggunanya adalah "ravieravie": <br>
+![alt text](image-3.png)
+
+Tampilan page ketika pengguna sukses masuk dan mulai mengirimkan pesan. Pada contoh ini adalah pengguna dengan username "ravieravie": <br>
+![alt text](image-4.png)
+
+Tampilan page ketika ada beberapa pengguna yang bertukar pesan satu sama lain. Pada contoh ini adalah pengguna dengan username "ravieravie" dan "abudabud": <br>
+![alt text](image-5.png)
 
 # YewChat 💬
 
