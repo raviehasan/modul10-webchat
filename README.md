@@ -1,3 +1,14 @@
+# Reflection Notes
+
+Tampilan page ketika pengguna pertama kali membuka aplikasi dan mengisi username untuk bisa lanjut chat. Pada contoh ini username penggunanya adalah "ravieravie": <br>
+![alt text](image-1.png)
+
+Tampilan page ketika pengguna sukses masuk dan mulai mengirimkan pesan. Pada contoh ini adalah pengguna dengan username "ravieravie": <br>
+![alt text](image-2.png)
+
+Tampilan page ketika ada beberapa pengguna yang bertukar pesan satu sama lain. Pada contoh ini adalah pengguna dengan username "ravieravie" dan "abudabud": <br>
+![alt text](image.png)
+
 # YewChat 💬
 
 > Source code for [Let’s Build a Websocket Chat Project With Rust and Yew 0.19 🦀](https://fsjohnny.medium.com/lets-build-a-websockets-project-with-rust-and-yew-0-19-60720367399f)

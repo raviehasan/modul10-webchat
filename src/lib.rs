@@ -1,13 +1,26 @@
 #![recursion_limit = "512"]
 
+mod components;
+mod services;
+
+use components::login::Login;
+use components::chat::Chat;
+// mod services;
+//
+use std::cell::RefCell;
+use std::rc::Rc;
+
+pub type User = Rc<UserInner>;
+
+#[derive(Debug, PartialEq)]
+pub struct UserInner {
+    pub username: RefCell<String>,
+}
+
 use wasm_bindgen::prelude::*;
 use yew::functional::*;
 use yew::prelude::*;
 use yew_router::prelude::*;
-
-mod components;
-use components::login::Login;
-use components::chat::Chat;
 
 // When the `wee_alloc` feature is enabled, this uses `wee_alloc` as the global
 // allocator.
@@ -28,6 +41,7 @@ pub enum Route {
     NotFound,
 }
 
+
 fn switch(selected_route: &Route) -> Html {
     match selected_route {
         Route::Login => html! {<Login />},
@@ -38,12 +52,20 @@ fn switch(selected_route: &Route) -> Html {
 
 #[function_component(Main)]
 fn main() -> Html {
+    let ctx = use_state(|| {
+        Rc::new(UserInner {
+            username: RefCell::new("initial".into()),
+        })
+    });
+
     html! {
-        <BrowserRouter>
-            <div class="flex w-screen h-screen">
-                <Switch<Route> render={Switch::render(switch)}/>
-            </div>
-        </BrowserRouter>
+        <ContextProvider<User> context={(*ctx).clone()}>
+            <BrowserRouter>
+                <div class="flex w-screen h-screen">
+                    <Switch<Route> render={Switch::render(switch)}/>
+                </div>
+            </BrowserRouter>
+        </ContextProvider<User>>
     }
 }
 
